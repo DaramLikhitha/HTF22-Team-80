@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Live Weather</title>
+        <link rel="stylesheet" href="weather_style.css">
+        <link rel="icon" type="image/x-icon" href="/images/sc.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+        
+    </head>
+    <body>
+
+        <div class="bg-image"></div>
+
+        <div class="bg-text">
+            <h1 style="font-size:50px;font-family: cursive;"><i class='fas fa-cloud-sun'></i>Welcome!</h1>
+            <h2 style="font-family:cursive;">Want to know weather status of your city ?</h2>
+
+            <div class="search_wrap search_wrap_3">
+                <div class="search_box">
+                    <div id="searchContainer">
+                        <input class="searchControl" type="text" placeholder="enter your city..." id="searchInput" style="font-family:cursive;">
+                        <div class="location_icon"><i class='fas fa-map-marker-alt' style='font-size:28px'></i></div>
+                        <div class="btn btn_common">
+                            <button class="searchControl" id="searchBtn"><i class="fas fa-search" style="color:black;font-size: 25px ;"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="weather-text">
+            <h2 style="font-family:cursive;">Weather Forecast :</h2>
+            <div id="weatherContainer">
+                <div id="weatherDescription">
+                    <h1 id="cityHeader"></h1>
+                    <div id="weatherMain">
+                        <div id="temperature"></div>
+                        <div id="weatherDescriptionHeader"></div>
+                        <div><img id="documentIconImg"></div>
+                    </div>
+                    <hr>
+                    <div id="windSpeed" class="bottom-details"></div>
+                    <div id="humidity" class="bottom-details"></div>
+                    <div id="pressure" class="bottom-details"></div>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+
+    </body>
+</html>
